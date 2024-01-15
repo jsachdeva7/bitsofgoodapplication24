@@ -24,12 +24,15 @@ function circle(icons) {
             icon.style.boxShadow = '0px 0px 100px rgb(120,120,120,0.5)';
             pfp.style.display = "none";
             slide.style.display = "flex";
+            icon.style.animation = "paused";
+            icon.style.backgroundColor = 'rgb(96, 96, 96)';
         });
 
         icon.addEventListener('mouseleave', () => {
             icon.style.boxShadow = '';
             pfp.style.display = "block";
             slide.style.display = "none";
+            icon.style.backgroundColor = 'rgb(47, 47, 47)';
         });
 
         icon.className = 'icon';
